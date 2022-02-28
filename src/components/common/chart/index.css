@@ -1,0 +1,25 @@
+@media screen and (max-width: 550px) {
+  .chart {
+    margin-top: 30px;
+  }
+
+  .recharts-wrapper {
+    position: relative;
+    left: -25px;
+  }
+
+  .recharts-cartesian-axis-tick {
+    font-size: 1.4rem;
+    font-family: Roboto, sans-serif;
+}
+
+  .recharts-layer .recharts-cartesian-axis-tick {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 120%;
+  }
+
+  .recharts-layer .recharts-cartesian-axis .recharts-xAxis .xAxis line {
+    border-bottom: 0.5px solid --color-border-bottom !important;
+  }
+}

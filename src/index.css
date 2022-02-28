@@ -1,8 +1,33 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&display=swap');
+
+:root {
+  --font-family: Encode Sans;
+
+  --gradient-header: linear-gradient(
+    359.73deg,
+    #000000 0.25%,
+    rgba(0, 0, 0, 0) 99.77%
+  );
+
+  --color-bg: #e5e5e5;
+  --color-title: #1D1D1F;
+  --color-secondary-text: #9a9a9a;
+  --color-green: #11ac6a;
+  --color-orange-dot: #ff5c00;
+  --color-green-dot: #31e498;
+  --color-border-bottom: #dcdcdc;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+
+body {
+  /* background: var(--color-bg); */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +35,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
 }

@@ -1,0 +1,30 @@
+@media screen and (max-width: 550px) {
+  .stats_header {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 0.7rem 1.2rem;
+    border-bottom: 0.5px solid --color-border-bottom;
+  }
+
+  .stats_header p {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 150%;
+    color: var(--color-secondary-text);
+  }
+
+  .stats_header h1 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+  }
+
+  .stats_header h6 {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 120%;
+    color: var(--color-green);
+  }
+}

@@ -1,0 +1,66 @@
+@media screen and (max-width: 550px) {
+  .header {
+    background: var(--gradient-header);
+    height: 194px;
+    border-bottom-left-radius: 280px 25px;
+    border-bottom-right-radius: 280px 25px;
+  }
+  .header__top-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__title {
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .header__title h1 {
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .header__channel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 25px;
+    gap: 10px;
+  }
+
+  .header__channel img {
+    border-radius: 200px;
+  }
+
+  .header__channel p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: white;
+  }
+
+  .header__channel-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .header__channel-stats p {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+}
