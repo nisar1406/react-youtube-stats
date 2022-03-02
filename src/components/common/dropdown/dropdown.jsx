@@ -1,23 +1,50 @@
 import React from "react";
 import Select from "react-select";
-
-const options = [
-  { value: "last 7 days", label: "Last 7 days" },
-  { value: "last 14 days", label: "Last 14 days" },
-  { value: "last 30 days", label: "Last 30 days" },
-  { value: "custom", label: "Custom" },
-];
+import { options } from "../../../utils/constants";
 
 const styles = {
   indicatorSeparator: () => ({
     display: "none",
   }),
+  dropdownIndicator: () => ({
+    position: "relative",
+    left: "79px",
+    bottom: "35px",
+  }),
+  valueContainer: () => ({
+    paddingTop: "2px",
+    paddingRight: "0px",
+    paddingBottom: "2px",
+    paddingLeft: "8px",
+  }),
+  singleValue: () => ({
+    right: "15px",
+    top: "3px",
+    position: "relative",
+    fontWeight: 500,
+  }),
+  control: () => ({
+    // none of react-select's styles are passed to <Control />
+    width: 110,
+    background: "white",
+    height: 32,
+    position: "relative",
+    border: "0.908257px solid #DCDCDC",
+    boxSizing: "border-box",
+    borderRadius: "18.1651px",
+    fontWeight: 500,
+    fontSize: "12px",
+    lineHeight: "150%",
+  }),
+  input: () => ({
+    cursor: "transparent",
+  }),
 };
 
-const Dropdown = ({ handleChange }) => (
+const Dropdown = ({ defaultValue, handleChange }) => (
   <Select
     styles={styles}
-    defaultValue={options[0]}
+    defaultValue={defaultValue}
     options={options}
     onChange={(value) => handleChange(value)}
   />

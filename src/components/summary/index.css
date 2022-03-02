@@ -8,21 +8,6 @@
     justify-content: space-between;
   }
 
-  .summary__date-selection {
-    background: #ffffff;
-    /* Grey / For dark BG */
-
-    border: 0.908257px solid --color-border-bottom !important;
-    box-sizing: border-box;
-    border-radius: 18.1651px;
-  }
-
-  .summary__date-selection p {
-    font-weight: 500;
-    font-size: 8px;
-    line-height: 150%;
-  }
-
   .summary__summary-stats {
     display: flex;
     justify-content: space-between;
@@ -48,5 +33,24 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 150%;
+  }
+
+  .summary__datepicker {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    /* padding: 1.3rem 1.2rem 2rem 1.2rem; */
+  }
+
+  .css-b62m3t-container .css-319lph-ValueContainer {
+    padding-top: 2px;
+    padding-right: 0px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+  }
+
+  .react-datepicker-wrapper .react-datepicker__input-container input {
+    width: 63%;
+    padding: 3px;
   }
 }

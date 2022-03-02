@@ -1,0 +1,55 @@
+.loading {
+  /*
+      Loading can be used before custom css are retrieved
+      hence the hard coded font-size and color
+    */
+  font-size: 1.125rem;
+  /* stylelint-disable-line */
+  color: #343434;
+  /* stylelint-disable-line */
+  text-align: center;
+}
+
+.topMargin {
+  margin: 3rem 0;
+}
+
+.logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 10px auto;
+  -webkit-animation: scaleout 2s infinite ease-in-out;
+          animation: scaleout 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes scaleout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.reverse span,
+.reverse svg {
+  color: #707070;
+  fill: white;
+}
+/*# sourceMappingURL=index.css.map */

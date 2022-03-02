@@ -20,6 +20,6 @@
   }
 
   .recharts-layer .recharts-cartesian-axis .recharts-xAxis .xAxis line {
-    border-bottom: 0.5px solid --color-border-bottom !important;
+    border-bottom: 0.5px solid var(--color-border-bottom);
   }
 }

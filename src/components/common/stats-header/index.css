@@ -5,7 +5,7 @@
     align-content: flex-start;
     align-items: flex-start;
     padding: 0.7rem 1.2rem;
-    border-bottom: 0.5px solid --color-border-bottom;
+    border-bottom: 0.5px solid var(--color-border-bottom);
   }
 
   .stats_header p {

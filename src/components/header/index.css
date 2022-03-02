@@ -1,9 +1,12 @@
 @media screen and (max-width: 550px) {
   .header {
-    background: var(--gradient-header);
+    background: linear-gradient(359.73deg, #000000 0.25%, rgba(0, 0, 0, 0) 99.77%);
+    margin-bottom: 2rem;
     height: 194px;
     border-bottom-left-radius: 280px 25px;
     border-bottom-right-radius: 280px 25px;
+    background-image:
+    url('../../assets/images/effect.png'), linear-gradient(104.65deg, #1D1D1F 0%, #0F0F38 96.71%);
   }
   .header__top-section {
     display: flex;
@@ -38,6 +41,8 @@
 
   .header__channel img {
     border-radius: 200px;
+    width: 51.18px;
+    height: 51.18px;
   }
 
   .header__channel p {
@@ -52,6 +57,7 @@
     align-items: center;
     justify-content: center;
     align-content: center;
+    gap: 2px;
   }
 
   .header__channel-stats p {
@@ -62,5 +68,9 @@
     align-items: center;
     text-align: center;
     color: white;
+  }
+  .header__channel-stats p:nth-child(2) {
+    top: -2px;
+    position: relative;
   }
 }

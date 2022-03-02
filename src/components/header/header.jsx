@@ -1,7 +1,7 @@
 import React from "react";
 import backButton from "../../assets/images/ArrowLeft.png";
 import youtube from "../../assets/images/youtube.png";
-import channelLogo from "../../assets/images/channel-logo.png";
+import defaultImage from "../../assets/images/channel-logo.png";
 import { intToString } from "../../utils/helper";
 
 const Header = ({ data }) => (
@@ -14,12 +14,13 @@ const Header = ({ data }) => (
       </div>
     </div>
     <div className="header__channel">
-      <img src={channelLogo} alt="channel_logo" />
+      <img src={data?.thumbnailUrl || defaultImage} alt="channel_logo" />
       <div className="header__channel-details">
-        <p>{data?.channelName}</p>
+        <p>{data?.channelName || ""}</p>
         <div className="header__channel-stats">
-          <p>{`${intToString(data?.subscribersCount)} subscribers`}</p>.
-          <p>{`${data?.videoCount} videos`}</p>
+          <p>{`${intToString(data?.subscribersCount || 0)} subscribers`}</p>
+          <p>.</p>
+          <p>{`${data?.videoCount || 0} videos`}</p>
         </div>
       </div>
     </div>

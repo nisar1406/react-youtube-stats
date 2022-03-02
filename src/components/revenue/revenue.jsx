@@ -13,6 +13,7 @@ const Revenue = ({ data, date }) => (
         data={`₹${data?.value} lac`}
         growth={`${data?.change?.percentage}%`}
       />
+      <p className="tests"/>
       <Chart data={data?.data} symbol="₹" />
     </div>
   </div>
