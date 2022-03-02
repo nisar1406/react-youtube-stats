@@ -1,11 +1,10 @@
-import axios from "axios";
-import moment from "moment";
 import { useCallback, useEffect, useState } from "react";
+// eslint-disable-line react-hooks/exhaustive-deps
+import moment from "moment";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import "./App.css";
 import { Audience, Header, Research, Revenue, Summary } from "./components";
-import ThreeDots from "./components/common/loader/loader";
 import { fetchApi } from "./utils/api-service";
 import { initialDates, options } from "./utils/constants";
 
@@ -16,7 +15,7 @@ const App = () => {
   const [error, setError] = useState(false);
   const [defaultValue, setDefaultValue] = useState(options[3]);
 
-  const getChannelStats = useCallback(async (selectedDates) => {
+  const getChannelStats = useCallback(async (selectedDates = dates) => {
     const mySwal = withReactContent(Swal);
     const response = await fetchApi(selectedDates);
     if (Object.keys(response).length === 0 && response.constructor === Object) {
@@ -34,10 +33,9 @@ const App = () => {
       setDefaultValue(options[3]);
       return;
     }
-    // setShowDatesDropdown(false);
     setError(false);
     setChannelStats(response);
-  }, []);
+  }, [dates]);
 
   useEffect(() => {
     getChannelStats(dates);
@@ -104,11 +102,8 @@ const App = () => {
     if (data?.startDate && data?.endDate) getChannelStats(data);
   };
 
-  console.log(dates);
-
   return (
     <>
-      {/* <ThreeDots /> */}
       <Header data={channelStats?.metadata} />
       <Summary
         data={channelStats?.summary}

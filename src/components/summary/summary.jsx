@@ -25,7 +25,7 @@ const Summary = ({ data, date, handleChange, showDatesDropdown, isError, default
             const revenueValue =
               key === "revenue" ? `₹${value} lac` : intToString(value);
             return (
-              <div className="summary__stats-details">
+              <div className="summary__stats-details" key={key}>
                 <p>{key}</p>
                 <h1>{revenueValue}</h1>
               </div>
